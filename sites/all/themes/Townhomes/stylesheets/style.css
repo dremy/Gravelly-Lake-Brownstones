@@ -1,0 +1,340 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Global partials: Typography, forms, site-wide changes.
+ */
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+/*! normalize.css v2.1.0 | Base | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/*! normalize.css v2.1.0 | Links | MIT License | git.io/normalize */
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/*! normalize.css v2.1.0 | Typography | MIT License | git.io/normalize */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/*! normalize.css v2.1.0 | Embedded Content | MIT License | git.io/normalize */
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*! normalize.css v2.1.0 | Figures | MIT License | git.io/normalize */
+figure {
+  margin: 0;
+}
+
+/*! normalize.css v2.1.0 | Forms | MIT License | git.io/normalize */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/*! normalize.css v2.1.0 | Tables | MIT License | git.io/normalize */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+/**
+ * Defaults: For any general elements to apply to the whole page.
+ */
+/**
+* Typography: Headings, body text, lists, code, and more for a versatile and durable typography system.
+*/
+body {
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a:link {
+  color: #2090b4;
+}
+a:visited {
+  color: #2090b4;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+hr {
+  height: 1px;
+  border: 1px solid #666;
+  padding-bottom: -1px;
+  margin: 1.5em 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+::-moz-selection {
+  background: #66b360;
+  color: white;
+  text-shadow: none;
+}
+
+::selection {
+  background: #66b360;
+  color: white;
+  text-shadow: none;
+}
+
+/**
+* Form elements: Inputs, buttons, etc.
+*/
+input,
+button,
+select,
+textarea {
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+
+/**
+ * Design partials: A place to put your specific design partials.
+ */
+#container {
+  margin: 20px auto;
+  height: auto;
+  height: 100%;
+  border: 1px solid #ccc;
+  background: #fefefe;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(210, 105, 30, 0.5)), color-stop(13.04348%, rgba(210, 105, 30, 0.5)), color-stop(13.04348%, rgba(210, 105, 30, 0.25)), color-stop(17.3913%, rgba(210, 105, 30, 0.25)), color-stop(17.3913%, rgba(210, 105, 30, 0.5)), color-stop(30.43478%, rgba(210, 105, 30, 0.5)), color-stop(30.43478%, rgba(210, 105, 30, 0.25)), color-stop(34.78261%, rgba(210, 105, 30, 0.25)), color-stop(34.78261%, rgba(210, 105, 30, 0.5)), color-stop(47.82609%, rgba(210, 105, 30, 0.5)), color-stop(47.82609%, rgba(210, 105, 30, 0.25)), color-stop(52.17391%, rgba(210, 105, 30, 0.25)), color-stop(52.17391%, rgba(210, 105, 30, 0.5)), color-stop(65.21739%, rgba(210, 105, 30, 0.5)), color-stop(65.21739%, rgba(210, 105, 30, 0.25)), color-stop(69.56522%, rgba(210, 105, 30, 0.25)), color-stop(69.56522%, rgba(210, 105, 30, 0.5)), color-stop(82.6087%, rgba(210, 105, 30, 0.5)), color-stop(82.6087%, rgba(210, 105, 30, 0.25)), color-stop(86.95652%, rgba(210, 105, 30, 0.25)), color-stop(86.95652%, rgba(210, 105, 30, 0.5)), color-stop(100%, rgba(210, 105, 30, 0.5)));
+  background-image: -webkit-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 13.04348%, rgba(210, 105, 30, 0.25) 13.04348%, rgba(210, 105, 30, 0.25) 17.3913%, rgba(210, 105, 30, 0.5) 17.3913%, rgba(210, 105, 30, 0.5) 30.43478%, rgba(210, 105, 30, 0.25) 30.43478%, rgba(210, 105, 30, 0.25) 34.78261%, rgba(210, 105, 30, 0.5) 34.78261%, rgba(210, 105, 30, 0.5) 47.82609%, rgba(210, 105, 30, 0.25) 47.82609%, rgba(210, 105, 30, 0.25) 52.17391%, rgba(210, 105, 30, 0.5) 52.17391%, rgba(210, 105, 30, 0.5) 65.21739%, rgba(210, 105, 30, 0.25) 65.21739%, rgba(210, 105, 30, 0.25) 69.56522%, rgba(210, 105, 30, 0.5) 69.56522%, rgba(210, 105, 30, 0.5) 82.6087%, rgba(210, 105, 30, 0.25) 82.6087%, rgba(210, 105, 30, 0.25) 86.95652%, rgba(210, 105, 30, 0.5) 86.95652%, rgba(210, 105, 30, 0.5) 100%);
+  background-image: -moz-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 13.04348%, rgba(210, 105, 30, 0.25) 13.04348%, rgba(210, 105, 30, 0.25) 17.3913%, rgba(210, 105, 30, 0.5) 17.3913%, rgba(210, 105, 30, 0.5) 30.43478%, rgba(210, 105, 30, 0.25) 30.43478%, rgba(210, 105, 30, 0.25) 34.78261%, rgba(210, 105, 30, 0.5) 34.78261%, rgba(210, 105, 30, 0.5) 47.82609%, rgba(210, 105, 30, 0.25) 47.82609%, rgba(210, 105, 30, 0.25) 52.17391%, rgba(210, 105, 30, 0.5) 52.17391%, rgba(210, 105, 30, 0.5) 65.21739%, rgba(210, 105, 30, 0.25) 65.21739%, rgba(210, 105, 30, 0.25) 69.56522%, rgba(210, 105, 30, 0.5) 69.56522%, rgba(210, 105, 30, 0.5) 82.6087%, rgba(210, 105, 30, 0.25) 82.6087%, rgba(210, 105, 30, 0.25) 86.95652%, rgba(210, 105, 30, 0.5) 86.95652%, rgba(210, 105, 30, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 13.04348%, rgba(210, 105, 30, 0.25) 13.04348%, rgba(210, 105, 30, 0.25) 17.3913%, rgba(210, 105, 30, 0.5) 17.3913%, rgba(210, 105, 30, 0.5) 30.43478%, rgba(210, 105, 30, 0.25) 30.43478%, rgba(210, 105, 30, 0.25) 34.78261%, rgba(210, 105, 30, 0.5) 34.78261%, rgba(210, 105, 30, 0.5) 47.82609%, rgba(210, 105, 30, 0.25) 47.82609%, rgba(210, 105, 30, 0.25) 52.17391%, rgba(210, 105, 30, 0.5) 52.17391%, rgba(210, 105, 30, 0.5) 65.21739%, rgba(210, 105, 30, 0.25) 65.21739%, rgba(210, 105, 30, 0.25) 69.56522%, rgba(210, 105, 30, 0.5) 69.56522%, rgba(210, 105, 30, 0.5) 82.6087%, rgba(210, 105, 30, 0.25) 82.6087%, rgba(210, 105, 30, 0.25) 86.95652%, rgba(210, 105, 30, 0.5) 86.95652%, rgba(210, 105, 30, 0.5) 100%);
+  background-image: linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 13.04348%, rgba(210, 105, 30, 0.25) 13.04348%, rgba(210, 105, 30, 0.25) 17.3913%, rgba(210, 105, 30, 0.5) 17.3913%, rgba(210, 105, 30, 0.5) 30.43478%, rgba(210, 105, 30, 0.25) 30.43478%, rgba(210, 105, 30, 0.25) 34.78261%, rgba(210, 105, 30, 0.5) 34.78261%, rgba(210, 105, 30, 0.5) 47.82609%, rgba(210, 105, 30, 0.25) 47.82609%, rgba(210, 105, 30, 0.25) 52.17391%, rgba(210, 105, 30, 0.5) 52.17391%, rgba(210, 105, 30, 0.5) 65.21739%, rgba(210, 105, 30, 0.25) 65.21739%, rgba(210, 105, 30, 0.25) 69.56522%, rgba(210, 105, 30, 0.5) 69.56522%, rgba(210, 105, 30, 0.5) 82.6087%, rgba(210, 105, 30, 0.25) 82.6087%, rgba(210, 105, 30, 0.25) 86.95652%, rgba(210, 105, 30, 0.5) 86.95652%, rgba(210, 105, 30, 0.5) 100%);
+  width: 320px;
+}
+@media (min-width: 48em) {
+  #container {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(210, 105, 30, 0.5)), color-stop(6.38298%, rgba(210, 105, 30, 0.5)), color-stop(6.38298%, rgba(210, 105, 30, 0.25)), color-stop(8.51064%, rgba(210, 105, 30, 0.25)), color-stop(8.51064%, rgba(210, 105, 30, 0.5)), color-stop(14.89362%, rgba(210, 105, 30, 0.5)), color-stop(14.89362%, rgba(210, 105, 30, 0.25)), color-stop(17.02128%, rgba(210, 105, 30, 0.25)), color-stop(17.02128%, rgba(210, 105, 30, 0.5)), color-stop(23.40426%, rgba(210, 105, 30, 0.5)), color-stop(23.40426%, rgba(210, 105, 30, 0.25)), color-stop(25.53191%, rgba(210, 105, 30, 0.25)), color-stop(25.53191%, rgba(210, 105, 30, 0.5)), color-stop(31.91489%, rgba(210, 105, 30, 0.5)), color-stop(31.91489%, rgba(210, 105, 30, 0.25)), color-stop(34.04255%, rgba(210, 105, 30, 0.25)), color-stop(34.04255%, rgba(210, 105, 30, 0.5)), color-stop(40.42553%, rgba(210, 105, 30, 0.5)), color-stop(40.42553%, rgba(210, 105, 30, 0.25)), color-stop(42.55319%, rgba(210, 105, 30, 0.25)), color-stop(42.55319%, rgba(210, 105, 30, 0.5)), color-stop(48.93617%, rgba(210, 105, 30, 0.5)), color-stop(48.93617%, rgba(210, 105, 30, 0.25)), color-stop(51.06383%, rgba(210, 105, 30, 0.25)), color-stop(51.06383%, rgba(210, 105, 30, 0.5)), color-stop(57.44681%, rgba(210, 105, 30, 0.5)), color-stop(57.44681%, rgba(210, 105, 30, 0.25)), color-stop(59.57447%, rgba(210, 105, 30, 0.25)), color-stop(59.57447%, rgba(210, 105, 30, 0.5)), color-stop(65.95745%, rgba(210, 105, 30, 0.5)), color-stop(65.95745%, rgba(210, 105, 30, 0.25)), color-stop(68.08511%, rgba(210, 105, 30, 0.25)), color-stop(68.08511%, rgba(210, 105, 30, 0.5)), color-stop(74.46809%, rgba(210, 105, 30, 0.5)), color-stop(74.46809%, rgba(210, 105, 30, 0.25)), color-stop(76.59574%, rgba(210, 105, 30, 0.25)), color-stop(76.59574%, rgba(210, 105, 30, 0.5)), color-stop(82.97872%, rgba(210, 105, 30, 0.5)), color-stop(82.97872%, rgba(210, 105, 30, 0.25)), color-stop(85.10638%, rgba(210, 105, 30, 0.25)), color-stop(85.10638%, rgba(210, 105, 30, 0.5)), color-stop(91.48936%, rgba(210, 105, 30, 0.5)), color-stop(91.48936%, rgba(210, 105, 30, 0.25)), color-stop(93.61702%, rgba(210, 105, 30, 0.25)), color-stop(93.61702%, rgba(210, 105, 30, 0.5)), color-stop(100%, rgba(210, 105, 30, 0.5)));
+    background-image: -webkit-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 6.38298%, rgba(210, 105, 30, 0.25) 6.38298%, rgba(210, 105, 30, 0.25) 8.51064%, rgba(210, 105, 30, 0.5) 8.51064%, rgba(210, 105, 30, 0.5) 14.89362%, rgba(210, 105, 30, 0.25) 14.89362%, rgba(210, 105, 30, 0.25) 17.02128%, rgba(210, 105, 30, 0.5) 17.02128%, rgba(210, 105, 30, 0.5) 23.40426%, rgba(210, 105, 30, 0.25) 23.40426%, rgba(210, 105, 30, 0.25) 25.53191%, rgba(210, 105, 30, 0.5) 25.53191%, rgba(210, 105, 30, 0.5) 31.91489%, rgba(210, 105, 30, 0.25) 31.91489%, rgba(210, 105, 30, 0.25) 34.04255%, rgba(210, 105, 30, 0.5) 34.04255%, rgba(210, 105, 30, 0.5) 40.42553%, rgba(210, 105, 30, 0.25) 40.42553%, rgba(210, 105, 30, 0.25) 42.55319%, rgba(210, 105, 30, 0.5) 42.55319%, rgba(210, 105, 30, 0.5) 48.93617%, rgba(210, 105, 30, 0.25) 48.93617%, rgba(210, 105, 30, 0.25) 51.06383%, rgba(210, 105, 30, 0.5) 51.06383%, rgba(210, 105, 30, 0.5) 57.44681%, rgba(210, 105, 30, 0.25) 57.44681%, rgba(210, 105, 30, 0.25) 59.57447%, rgba(210, 105, 30, 0.5) 59.57447%, rgba(210, 105, 30, 0.5) 65.95745%, rgba(210, 105, 30, 0.25) 65.95745%, rgba(210, 105, 30, 0.25) 68.08511%, rgba(210, 105, 30, 0.5) 68.08511%, rgba(210, 105, 30, 0.5) 74.46809%, rgba(210, 105, 30, 0.25) 74.46809%, rgba(210, 105, 30, 0.25) 76.59574%, rgba(210, 105, 30, 0.5) 76.59574%, rgba(210, 105, 30, 0.5) 82.97872%, rgba(210, 105, 30, 0.25) 82.97872%, rgba(210, 105, 30, 0.25) 85.10638%, rgba(210, 105, 30, 0.5) 85.10638%, rgba(210, 105, 30, 0.5) 91.48936%, rgba(210, 105, 30, 0.25) 91.48936%, rgba(210, 105, 30, 0.25) 93.61702%, rgba(210, 105, 30, 0.5) 93.61702%, rgba(210, 105, 30, 0.5) 100%);
+    background-image: -moz-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 6.38298%, rgba(210, 105, 30, 0.25) 6.38298%, rgba(210, 105, 30, 0.25) 8.51064%, rgba(210, 105, 30, 0.5) 8.51064%, rgba(210, 105, 30, 0.5) 14.89362%, rgba(210, 105, 30, 0.25) 14.89362%, rgba(210, 105, 30, 0.25) 17.02128%, rgba(210, 105, 30, 0.5) 17.02128%, rgba(210, 105, 30, 0.5) 23.40426%, rgba(210, 105, 30, 0.25) 23.40426%, rgba(210, 105, 30, 0.25) 25.53191%, rgba(210, 105, 30, 0.5) 25.53191%, rgba(210, 105, 30, 0.5) 31.91489%, rgba(210, 105, 30, 0.25) 31.91489%, rgba(210, 105, 30, 0.25) 34.04255%, rgba(210, 105, 30, 0.5) 34.04255%, rgba(210, 105, 30, 0.5) 40.42553%, rgba(210, 105, 30, 0.25) 40.42553%, rgba(210, 105, 30, 0.25) 42.55319%, rgba(210, 105, 30, 0.5) 42.55319%, rgba(210, 105, 30, 0.5) 48.93617%, rgba(210, 105, 30, 0.25) 48.93617%, rgba(210, 105, 30, 0.25) 51.06383%, rgba(210, 105, 30, 0.5) 51.06383%, rgba(210, 105, 30, 0.5) 57.44681%, rgba(210, 105, 30, 0.25) 57.44681%, rgba(210, 105, 30, 0.25) 59.57447%, rgba(210, 105, 30, 0.5) 59.57447%, rgba(210, 105, 30, 0.5) 65.95745%, rgba(210, 105, 30, 0.25) 65.95745%, rgba(210, 105, 30, 0.25) 68.08511%, rgba(210, 105, 30, 0.5) 68.08511%, rgba(210, 105, 30, 0.5) 74.46809%, rgba(210, 105, 30, 0.25) 74.46809%, rgba(210, 105, 30, 0.25) 76.59574%, rgba(210, 105, 30, 0.5) 76.59574%, rgba(210, 105, 30, 0.5) 82.97872%, rgba(210, 105, 30, 0.25) 82.97872%, rgba(210, 105, 30, 0.25) 85.10638%, rgba(210, 105, 30, 0.5) 85.10638%, rgba(210, 105, 30, 0.5) 91.48936%, rgba(210, 105, 30, 0.25) 91.48936%, rgba(210, 105, 30, 0.25) 93.61702%, rgba(210, 105, 30, 0.5) 93.61702%, rgba(210, 105, 30, 0.5) 100%);
+    background-image: -o-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 6.38298%, rgba(210, 105, 30, 0.25) 6.38298%, rgba(210, 105, 30, 0.25) 8.51064%, rgba(210, 105, 30, 0.5) 8.51064%, rgba(210, 105, 30, 0.5) 14.89362%, rgba(210, 105, 30, 0.25) 14.89362%, rgba(210, 105, 30, 0.25) 17.02128%, rgba(210, 105, 30, 0.5) 17.02128%, rgba(210, 105, 30, 0.5) 23.40426%, rgba(210, 105, 30, 0.25) 23.40426%, rgba(210, 105, 30, 0.25) 25.53191%, rgba(210, 105, 30, 0.5) 25.53191%, rgba(210, 105, 30, 0.5) 31.91489%, rgba(210, 105, 30, 0.25) 31.91489%, rgba(210, 105, 30, 0.25) 34.04255%, rgba(210, 105, 30, 0.5) 34.04255%, rgba(210, 105, 30, 0.5) 40.42553%, rgba(210, 105, 30, 0.25) 40.42553%, rgba(210, 105, 30, 0.25) 42.55319%, rgba(210, 105, 30, 0.5) 42.55319%, rgba(210, 105, 30, 0.5) 48.93617%, rgba(210, 105, 30, 0.25) 48.93617%, rgba(210, 105, 30, 0.25) 51.06383%, rgba(210, 105, 30, 0.5) 51.06383%, rgba(210, 105, 30, 0.5) 57.44681%, rgba(210, 105, 30, 0.25) 57.44681%, rgba(210, 105, 30, 0.25) 59.57447%, rgba(210, 105, 30, 0.5) 59.57447%, rgba(210, 105, 30, 0.5) 65.95745%, rgba(210, 105, 30, 0.25) 65.95745%, rgba(210, 105, 30, 0.25) 68.08511%, rgba(210, 105, 30, 0.5) 68.08511%, rgba(210, 105, 30, 0.5) 74.46809%, rgba(210, 105, 30, 0.25) 74.46809%, rgba(210, 105, 30, 0.25) 76.59574%, rgba(210, 105, 30, 0.5) 76.59574%, rgba(210, 105, 30, 0.5) 82.97872%, rgba(210, 105, 30, 0.25) 82.97872%, rgba(210, 105, 30, 0.25) 85.10638%, rgba(210, 105, 30, 0.5) 85.10638%, rgba(210, 105, 30, 0.5) 91.48936%, rgba(210, 105, 30, 0.25) 91.48936%, rgba(210, 105, 30, 0.25) 93.61702%, rgba(210, 105, 30, 0.5) 93.61702%, rgba(210, 105, 30, 0.5) 100%);
+    background-image: linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 6.38298%, rgba(210, 105, 30, 0.25) 6.38298%, rgba(210, 105, 30, 0.25) 8.51064%, rgba(210, 105, 30, 0.5) 8.51064%, rgba(210, 105, 30, 0.5) 14.89362%, rgba(210, 105, 30, 0.25) 14.89362%, rgba(210, 105, 30, 0.25) 17.02128%, rgba(210, 105, 30, 0.5) 17.02128%, rgba(210, 105, 30, 0.5) 23.40426%, rgba(210, 105, 30, 0.25) 23.40426%, rgba(210, 105, 30, 0.25) 25.53191%, rgba(210, 105, 30, 0.5) 25.53191%, rgba(210, 105, 30, 0.5) 31.91489%, rgba(210, 105, 30, 0.25) 31.91489%, rgba(210, 105, 30, 0.25) 34.04255%, rgba(210, 105, 30, 0.5) 34.04255%, rgba(210, 105, 30, 0.5) 40.42553%, rgba(210, 105, 30, 0.25) 40.42553%, rgba(210, 105, 30, 0.25) 42.55319%, rgba(210, 105, 30, 0.5) 42.55319%, rgba(210, 105, 30, 0.5) 48.93617%, rgba(210, 105, 30, 0.25) 48.93617%, rgba(210, 105, 30, 0.25) 51.06383%, rgba(210, 105, 30, 0.5) 51.06383%, rgba(210, 105, 30, 0.5) 57.44681%, rgba(210, 105, 30, 0.25) 57.44681%, rgba(210, 105, 30, 0.25) 59.57447%, rgba(210, 105, 30, 0.5) 59.57447%, rgba(210, 105, 30, 0.5) 65.95745%, rgba(210, 105, 30, 0.25) 65.95745%, rgba(210, 105, 30, 0.25) 68.08511%, rgba(210, 105, 30, 0.5) 68.08511%, rgba(210, 105, 30, 0.5) 74.46809%, rgba(210, 105, 30, 0.25) 74.46809%, rgba(210, 105, 30, 0.25) 76.59574%, rgba(210, 105, 30, 0.5) 76.59574%, rgba(210, 105, 30, 0.5) 82.97872%, rgba(210, 105, 30, 0.25) 82.97872%, rgba(210, 105, 30, 0.25) 85.10638%, rgba(210, 105, 30, 0.5) 85.10638%, rgba(210, 105, 30, 0.5) 91.48936%, rgba(210, 105, 30, 0.25) 91.48936%, rgba(210, 105, 30, 0.25) 93.61702%, rgba(210, 105, 30, 0.5) 93.61702%, rgba(210, 105, 30, 0.5) 100%);
+  }
+}
+@media (min-width: 48em) {
+  #container {
+    width: 768px;
+  }
+}
+@media (min-width: 60em) {
+  #container {
+    width: 960px;
+  }
+}
