@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Marquee feature.
+ */
+
+include_once 'marquee.features.inc';

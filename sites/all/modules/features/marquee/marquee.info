@@ -1,0 +1,16 @@
+name = Marquee
+description = Marquee Content Type
+core = 7.x
+package = Features
+version = 7.x-1.0-dev
+project = marquee
+dependencies[] = features
+dependencies[] = image
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = field_marquee
+features[field_instance][] = node-marquee-body
+features[field_instance][] = node-marquee-field_marquee
+features[node][] = marquee
+project path = sites/all/modules/features
