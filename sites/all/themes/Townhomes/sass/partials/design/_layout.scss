@@ -8,20 +8,3 @@ $grids: add-grid(12 at 768px); // Tablet & Desktop
 $gutter: 10px;
 $gutter: add-guttoer(20px at 960px); //  Desktop
 $gutter-styles: 'fixed';
-
-#container {
-	margin: 20px auto;
-	height:auto;
-	height: 100%;
-	border: 1px solid #ccc;
-	background: #fefefe;
-	@include border-radius (8px);
-	@include background-grid;
-	width:320px;
-	@include breakpoint (768px) {
-		width: 768px;
-	}
-	@include breakpoint (960px) {
-		width:960px;	
-	}
-}

@@ -1,0 +1,115 @@
+//////////////
+// Region
+//////////////
+
+#header {
+	background: #222;
+	height: 100px;	
+	#logo {
+		float: left;
+		padding: 20px 50px;
+		position: relative;
+		display: inline-block;
+		transition: background 0.5s ease;
+		margin: 0 -40px 0 20px;
+		&:hover {
+			background: #888;
+			background: rgba($black, 0.25);
+		}
+	}
+}
+
+#main {
+	//@include background-grid;
+}
+
+.statement {
+	background: #f2f2f2;
+	padding: 100px 10%;
+	@include breakpoint (768px) {
+		padding: 100px 20%;
+	}
+	@include breakpoint (960px) {
+		padding: 100px 30%;
+	}
+	p {
+		@include font-size (2.4);
+		font-family: $amasis;
+		line-height: 1.3em;
+		text-align: center;
+		@include breakpoint (768px) {
+			@include font-size (3.2);
+		}
+		@include breakpoint (960px) {
+			min-width: 580px;
+			@include font-size (4.0);
+		}
+	}
+}
+h2.pane-title {
+	@include font-size (2.4);
+	@include breakpoint (768px) {
+		@include font-size (3.2);
+	}
+	@include breakpoint (960px) {
+		@include font-size (4.0);
+	}		
+}
+
+.features {
+	padding: 100px 10%;
+	@include font-size (2.0);
+	text-align: center;
+	.info {
+		line-height: 2.0em;
+	}
+	.numbers {
+		padding: 30px 0px;
+		.trips {
+			float: left;
+			width: 30%;
+			&:nth-child(2) {
+				margin:0 2%;
+			}
+			.bedrooms {
+				background: #a7d3db;
+				width: 80px;
+				height: 80px;
+				display: block;
+				margin: 0 40%;
+				color: white;
+				padding-top: 31px;
+				border-radius: 40px;
+				font-size: 50px;
+				font-family: Proxima Nova;
+			}
+			.bathrooms {
+				background: #e3e3e3;
+				width: 80px;
+				height: 80px;
+				display: block;
+				margin: 0 40%;
+				color: white;
+				padding-top: 31px;
+				border-radius: 40px;
+				font-size: 50px;
+				font-family: Proxima Nova;
+			}
+			.bubble {
+				background: #c9c793;
+				width: 80px;
+				height: 80px;
+				display: block;
+				margin: 0 40%;
+				color: white;
+				padding-top: 31px;
+				border-radius: 40px;
+				font-size: 50px;
+				font-family: Proxima Nova;
+				.feet {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}

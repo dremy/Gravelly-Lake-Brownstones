@@ -242,7 +242,7 @@ table {
 * Typography: Headings, body text, lists, code, and more for a versatile and durable typography system.
 */
 body {
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Proxima Nova, Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -295,46 +295,459 @@ input,
 button,
 select,
 textarea {
-  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-family: Proxima Nova, Arial, Helvetica, sans-serif;
 }
 
 /**
  * Design partials: A place to put your specific design partials.
  */
+/* @Font Face - Amasis */
+/* @file
+/* Global typography for the 2012 TFA responsive theme */
+@font-face {
+  font-family: 'Amasis';
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-webfont.eot");
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-webfont.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amasis Italic';
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-italic-webfont.eot");
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-italic-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-italic-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-italic-webfont.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Amasis Bold';
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bold-webfont.eot");
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bold-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bold-webfont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amasis Bold Italic';
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bolditalic-webfont.eot");
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bolditalic-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bolditalic-webfont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Amasis Black';
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-black-webfont.eot");
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-black-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-black-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-black-webfont.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amasis Black Italic';
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-blackitalic-webfont.eot");
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-blackitalic-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-blackitalic-webfont.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Amasis Light';
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-light-webfont.eot");
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-light-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-light-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-light-webfont.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amasis Light Italic';
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-lightitalic-webfont.eot");
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-lightitalic-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-lightitalic-webfont.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Amasis Medium';
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-medium-webfont.eot");
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-medium-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-medium-webfont.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amasis Medium Italic';
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-mediumitalic-webfont.eot");
+  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-mediumitalic-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-mediumitalic-webfont.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+html, body {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: auto;
+}
+
+body {
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-family: Proxima Nova, Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  background: white;
+}
+
 #container {
-  margin: 20px auto;
+  margin: 0 auto;
   height: auto;
   height: 100%;
-  border: 1px solid #ccc;
-  background: #fefefe;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(210, 105, 30, 0.5)), color-stop(13.04348%, rgba(210, 105, 30, 0.5)), color-stop(13.04348%, rgba(210, 105, 30, 0.25)), color-stop(17.3913%, rgba(210, 105, 30, 0.25)), color-stop(17.3913%, rgba(210, 105, 30, 0.5)), color-stop(30.43478%, rgba(210, 105, 30, 0.5)), color-stop(30.43478%, rgba(210, 105, 30, 0.25)), color-stop(34.78261%, rgba(210, 105, 30, 0.25)), color-stop(34.78261%, rgba(210, 105, 30, 0.5)), color-stop(47.82609%, rgba(210, 105, 30, 0.5)), color-stop(47.82609%, rgba(210, 105, 30, 0.25)), color-stop(52.17391%, rgba(210, 105, 30, 0.25)), color-stop(52.17391%, rgba(210, 105, 30, 0.5)), color-stop(65.21739%, rgba(210, 105, 30, 0.5)), color-stop(65.21739%, rgba(210, 105, 30, 0.25)), color-stop(69.56522%, rgba(210, 105, 30, 0.25)), color-stop(69.56522%, rgba(210, 105, 30, 0.5)), color-stop(82.6087%, rgba(210, 105, 30, 0.5)), color-stop(82.6087%, rgba(210, 105, 30, 0.25)), color-stop(86.95652%, rgba(210, 105, 30, 0.25)), color-stop(86.95652%, rgba(210, 105, 30, 0.5)), color-stop(100%, rgba(210, 105, 30, 0.5)));
-  background-image: -webkit-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 13.04348%, rgba(210, 105, 30, 0.25) 13.04348%, rgba(210, 105, 30, 0.25) 17.3913%, rgba(210, 105, 30, 0.5) 17.3913%, rgba(210, 105, 30, 0.5) 30.43478%, rgba(210, 105, 30, 0.25) 30.43478%, rgba(210, 105, 30, 0.25) 34.78261%, rgba(210, 105, 30, 0.5) 34.78261%, rgba(210, 105, 30, 0.5) 47.82609%, rgba(210, 105, 30, 0.25) 47.82609%, rgba(210, 105, 30, 0.25) 52.17391%, rgba(210, 105, 30, 0.5) 52.17391%, rgba(210, 105, 30, 0.5) 65.21739%, rgba(210, 105, 30, 0.25) 65.21739%, rgba(210, 105, 30, 0.25) 69.56522%, rgba(210, 105, 30, 0.5) 69.56522%, rgba(210, 105, 30, 0.5) 82.6087%, rgba(210, 105, 30, 0.25) 82.6087%, rgba(210, 105, 30, 0.25) 86.95652%, rgba(210, 105, 30, 0.5) 86.95652%, rgba(210, 105, 30, 0.5) 100%);
-  background-image: -moz-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 13.04348%, rgba(210, 105, 30, 0.25) 13.04348%, rgba(210, 105, 30, 0.25) 17.3913%, rgba(210, 105, 30, 0.5) 17.3913%, rgba(210, 105, 30, 0.5) 30.43478%, rgba(210, 105, 30, 0.25) 30.43478%, rgba(210, 105, 30, 0.25) 34.78261%, rgba(210, 105, 30, 0.5) 34.78261%, rgba(210, 105, 30, 0.5) 47.82609%, rgba(210, 105, 30, 0.25) 47.82609%, rgba(210, 105, 30, 0.25) 52.17391%, rgba(210, 105, 30, 0.5) 52.17391%, rgba(210, 105, 30, 0.5) 65.21739%, rgba(210, 105, 30, 0.25) 65.21739%, rgba(210, 105, 30, 0.25) 69.56522%, rgba(210, 105, 30, 0.5) 69.56522%, rgba(210, 105, 30, 0.5) 82.6087%, rgba(210, 105, 30, 0.25) 82.6087%, rgba(210, 105, 30, 0.25) 86.95652%, rgba(210, 105, 30, 0.5) 86.95652%, rgba(210, 105, 30, 0.5) 100%);
-  background-image: -o-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 13.04348%, rgba(210, 105, 30, 0.25) 13.04348%, rgba(210, 105, 30, 0.25) 17.3913%, rgba(210, 105, 30, 0.5) 17.3913%, rgba(210, 105, 30, 0.5) 30.43478%, rgba(210, 105, 30, 0.25) 30.43478%, rgba(210, 105, 30, 0.25) 34.78261%, rgba(210, 105, 30, 0.5) 34.78261%, rgba(210, 105, 30, 0.5) 47.82609%, rgba(210, 105, 30, 0.25) 47.82609%, rgba(210, 105, 30, 0.25) 52.17391%, rgba(210, 105, 30, 0.5) 52.17391%, rgba(210, 105, 30, 0.5) 65.21739%, rgba(210, 105, 30, 0.25) 65.21739%, rgba(210, 105, 30, 0.25) 69.56522%, rgba(210, 105, 30, 0.5) 69.56522%, rgba(210, 105, 30, 0.5) 82.6087%, rgba(210, 105, 30, 0.25) 82.6087%, rgba(210, 105, 30, 0.25) 86.95652%, rgba(210, 105, 30, 0.5) 86.95652%, rgba(210, 105, 30, 0.5) 100%);
-  background-image: linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 13.04348%, rgba(210, 105, 30, 0.25) 13.04348%, rgba(210, 105, 30, 0.25) 17.3913%, rgba(210, 105, 30, 0.5) 17.3913%, rgba(210, 105, 30, 0.5) 30.43478%, rgba(210, 105, 30, 0.25) 30.43478%, rgba(210, 105, 30, 0.25) 34.78261%, rgba(210, 105, 30, 0.5) 34.78261%, rgba(210, 105, 30, 0.5) 47.82609%, rgba(210, 105, 30, 0.25) 47.82609%, rgba(210, 105, 30, 0.25) 52.17391%, rgba(210, 105, 30, 0.5) 52.17391%, rgba(210, 105, 30, 0.5) 65.21739%, rgba(210, 105, 30, 0.25) 65.21739%, rgba(210, 105, 30, 0.25) 69.56522%, rgba(210, 105, 30, 0.5) 69.56522%, rgba(210, 105, 30, 0.5) 82.6087%, rgba(210, 105, 30, 0.25) 82.6087%, rgba(210, 105, 30, 0.25) 86.95652%, rgba(210, 105, 30, 0.5) 86.95652%, rgba(210, 105, 30, 0.5) 100%);
-  width: 320px;
+  width: 100%;
 }
 @media (min-width: 48em) {
   #container {
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(210, 105, 30, 0.5)), color-stop(6.38298%, rgba(210, 105, 30, 0.5)), color-stop(6.38298%, rgba(210, 105, 30, 0.25)), color-stop(8.51064%, rgba(210, 105, 30, 0.25)), color-stop(8.51064%, rgba(210, 105, 30, 0.5)), color-stop(14.89362%, rgba(210, 105, 30, 0.5)), color-stop(14.89362%, rgba(210, 105, 30, 0.25)), color-stop(17.02128%, rgba(210, 105, 30, 0.25)), color-stop(17.02128%, rgba(210, 105, 30, 0.5)), color-stop(23.40426%, rgba(210, 105, 30, 0.5)), color-stop(23.40426%, rgba(210, 105, 30, 0.25)), color-stop(25.53191%, rgba(210, 105, 30, 0.25)), color-stop(25.53191%, rgba(210, 105, 30, 0.5)), color-stop(31.91489%, rgba(210, 105, 30, 0.5)), color-stop(31.91489%, rgba(210, 105, 30, 0.25)), color-stop(34.04255%, rgba(210, 105, 30, 0.25)), color-stop(34.04255%, rgba(210, 105, 30, 0.5)), color-stop(40.42553%, rgba(210, 105, 30, 0.5)), color-stop(40.42553%, rgba(210, 105, 30, 0.25)), color-stop(42.55319%, rgba(210, 105, 30, 0.25)), color-stop(42.55319%, rgba(210, 105, 30, 0.5)), color-stop(48.93617%, rgba(210, 105, 30, 0.5)), color-stop(48.93617%, rgba(210, 105, 30, 0.25)), color-stop(51.06383%, rgba(210, 105, 30, 0.25)), color-stop(51.06383%, rgba(210, 105, 30, 0.5)), color-stop(57.44681%, rgba(210, 105, 30, 0.5)), color-stop(57.44681%, rgba(210, 105, 30, 0.25)), color-stop(59.57447%, rgba(210, 105, 30, 0.25)), color-stop(59.57447%, rgba(210, 105, 30, 0.5)), color-stop(65.95745%, rgba(210, 105, 30, 0.5)), color-stop(65.95745%, rgba(210, 105, 30, 0.25)), color-stop(68.08511%, rgba(210, 105, 30, 0.25)), color-stop(68.08511%, rgba(210, 105, 30, 0.5)), color-stop(74.46809%, rgba(210, 105, 30, 0.5)), color-stop(74.46809%, rgba(210, 105, 30, 0.25)), color-stop(76.59574%, rgba(210, 105, 30, 0.25)), color-stop(76.59574%, rgba(210, 105, 30, 0.5)), color-stop(82.97872%, rgba(210, 105, 30, 0.5)), color-stop(82.97872%, rgba(210, 105, 30, 0.25)), color-stop(85.10638%, rgba(210, 105, 30, 0.25)), color-stop(85.10638%, rgba(210, 105, 30, 0.5)), color-stop(91.48936%, rgba(210, 105, 30, 0.5)), color-stop(91.48936%, rgba(210, 105, 30, 0.25)), color-stop(93.61702%, rgba(210, 105, 30, 0.25)), color-stop(93.61702%, rgba(210, 105, 30, 0.5)), color-stop(100%, rgba(210, 105, 30, 0.5)));
-    background-image: -webkit-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 6.38298%, rgba(210, 105, 30, 0.25) 6.38298%, rgba(210, 105, 30, 0.25) 8.51064%, rgba(210, 105, 30, 0.5) 8.51064%, rgba(210, 105, 30, 0.5) 14.89362%, rgba(210, 105, 30, 0.25) 14.89362%, rgba(210, 105, 30, 0.25) 17.02128%, rgba(210, 105, 30, 0.5) 17.02128%, rgba(210, 105, 30, 0.5) 23.40426%, rgba(210, 105, 30, 0.25) 23.40426%, rgba(210, 105, 30, 0.25) 25.53191%, rgba(210, 105, 30, 0.5) 25.53191%, rgba(210, 105, 30, 0.5) 31.91489%, rgba(210, 105, 30, 0.25) 31.91489%, rgba(210, 105, 30, 0.25) 34.04255%, rgba(210, 105, 30, 0.5) 34.04255%, rgba(210, 105, 30, 0.5) 40.42553%, rgba(210, 105, 30, 0.25) 40.42553%, rgba(210, 105, 30, 0.25) 42.55319%, rgba(210, 105, 30, 0.5) 42.55319%, rgba(210, 105, 30, 0.5) 48.93617%, rgba(210, 105, 30, 0.25) 48.93617%, rgba(210, 105, 30, 0.25) 51.06383%, rgba(210, 105, 30, 0.5) 51.06383%, rgba(210, 105, 30, 0.5) 57.44681%, rgba(210, 105, 30, 0.25) 57.44681%, rgba(210, 105, 30, 0.25) 59.57447%, rgba(210, 105, 30, 0.5) 59.57447%, rgba(210, 105, 30, 0.5) 65.95745%, rgba(210, 105, 30, 0.25) 65.95745%, rgba(210, 105, 30, 0.25) 68.08511%, rgba(210, 105, 30, 0.5) 68.08511%, rgba(210, 105, 30, 0.5) 74.46809%, rgba(210, 105, 30, 0.25) 74.46809%, rgba(210, 105, 30, 0.25) 76.59574%, rgba(210, 105, 30, 0.5) 76.59574%, rgba(210, 105, 30, 0.5) 82.97872%, rgba(210, 105, 30, 0.25) 82.97872%, rgba(210, 105, 30, 0.25) 85.10638%, rgba(210, 105, 30, 0.5) 85.10638%, rgba(210, 105, 30, 0.5) 91.48936%, rgba(210, 105, 30, 0.25) 91.48936%, rgba(210, 105, 30, 0.25) 93.61702%, rgba(210, 105, 30, 0.5) 93.61702%, rgba(210, 105, 30, 0.5) 100%);
-    background-image: -moz-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 6.38298%, rgba(210, 105, 30, 0.25) 6.38298%, rgba(210, 105, 30, 0.25) 8.51064%, rgba(210, 105, 30, 0.5) 8.51064%, rgba(210, 105, 30, 0.5) 14.89362%, rgba(210, 105, 30, 0.25) 14.89362%, rgba(210, 105, 30, 0.25) 17.02128%, rgba(210, 105, 30, 0.5) 17.02128%, rgba(210, 105, 30, 0.5) 23.40426%, rgba(210, 105, 30, 0.25) 23.40426%, rgba(210, 105, 30, 0.25) 25.53191%, rgba(210, 105, 30, 0.5) 25.53191%, rgba(210, 105, 30, 0.5) 31.91489%, rgba(210, 105, 30, 0.25) 31.91489%, rgba(210, 105, 30, 0.25) 34.04255%, rgba(210, 105, 30, 0.5) 34.04255%, rgba(210, 105, 30, 0.5) 40.42553%, rgba(210, 105, 30, 0.25) 40.42553%, rgba(210, 105, 30, 0.25) 42.55319%, rgba(210, 105, 30, 0.5) 42.55319%, rgba(210, 105, 30, 0.5) 48.93617%, rgba(210, 105, 30, 0.25) 48.93617%, rgba(210, 105, 30, 0.25) 51.06383%, rgba(210, 105, 30, 0.5) 51.06383%, rgba(210, 105, 30, 0.5) 57.44681%, rgba(210, 105, 30, 0.25) 57.44681%, rgba(210, 105, 30, 0.25) 59.57447%, rgba(210, 105, 30, 0.5) 59.57447%, rgba(210, 105, 30, 0.5) 65.95745%, rgba(210, 105, 30, 0.25) 65.95745%, rgba(210, 105, 30, 0.25) 68.08511%, rgba(210, 105, 30, 0.5) 68.08511%, rgba(210, 105, 30, 0.5) 74.46809%, rgba(210, 105, 30, 0.25) 74.46809%, rgba(210, 105, 30, 0.25) 76.59574%, rgba(210, 105, 30, 0.5) 76.59574%, rgba(210, 105, 30, 0.5) 82.97872%, rgba(210, 105, 30, 0.25) 82.97872%, rgba(210, 105, 30, 0.25) 85.10638%, rgba(210, 105, 30, 0.5) 85.10638%, rgba(210, 105, 30, 0.5) 91.48936%, rgba(210, 105, 30, 0.25) 91.48936%, rgba(210, 105, 30, 0.25) 93.61702%, rgba(210, 105, 30, 0.5) 93.61702%, rgba(210, 105, 30, 0.5) 100%);
-    background-image: -o-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 6.38298%, rgba(210, 105, 30, 0.25) 6.38298%, rgba(210, 105, 30, 0.25) 8.51064%, rgba(210, 105, 30, 0.5) 8.51064%, rgba(210, 105, 30, 0.5) 14.89362%, rgba(210, 105, 30, 0.25) 14.89362%, rgba(210, 105, 30, 0.25) 17.02128%, rgba(210, 105, 30, 0.5) 17.02128%, rgba(210, 105, 30, 0.5) 23.40426%, rgba(210, 105, 30, 0.25) 23.40426%, rgba(210, 105, 30, 0.25) 25.53191%, rgba(210, 105, 30, 0.5) 25.53191%, rgba(210, 105, 30, 0.5) 31.91489%, rgba(210, 105, 30, 0.25) 31.91489%, rgba(210, 105, 30, 0.25) 34.04255%, rgba(210, 105, 30, 0.5) 34.04255%, rgba(210, 105, 30, 0.5) 40.42553%, rgba(210, 105, 30, 0.25) 40.42553%, rgba(210, 105, 30, 0.25) 42.55319%, rgba(210, 105, 30, 0.5) 42.55319%, rgba(210, 105, 30, 0.5) 48.93617%, rgba(210, 105, 30, 0.25) 48.93617%, rgba(210, 105, 30, 0.25) 51.06383%, rgba(210, 105, 30, 0.5) 51.06383%, rgba(210, 105, 30, 0.5) 57.44681%, rgba(210, 105, 30, 0.25) 57.44681%, rgba(210, 105, 30, 0.25) 59.57447%, rgba(210, 105, 30, 0.5) 59.57447%, rgba(210, 105, 30, 0.5) 65.95745%, rgba(210, 105, 30, 0.25) 65.95745%, rgba(210, 105, 30, 0.25) 68.08511%, rgba(210, 105, 30, 0.5) 68.08511%, rgba(210, 105, 30, 0.5) 74.46809%, rgba(210, 105, 30, 0.25) 74.46809%, rgba(210, 105, 30, 0.25) 76.59574%, rgba(210, 105, 30, 0.5) 76.59574%, rgba(210, 105, 30, 0.5) 82.97872%, rgba(210, 105, 30, 0.25) 82.97872%, rgba(210, 105, 30, 0.25) 85.10638%, rgba(210, 105, 30, 0.5) 85.10638%, rgba(210, 105, 30, 0.5) 91.48936%, rgba(210, 105, 30, 0.25) 91.48936%, rgba(210, 105, 30, 0.25) 93.61702%, rgba(210, 105, 30, 0.5) 93.61702%, rgba(210, 105, 30, 0.5) 100%);
-    background-image: linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 6.38298%, rgba(210, 105, 30, 0.25) 6.38298%, rgba(210, 105, 30, 0.25) 8.51064%, rgba(210, 105, 30, 0.5) 8.51064%, rgba(210, 105, 30, 0.5) 14.89362%, rgba(210, 105, 30, 0.25) 14.89362%, rgba(210, 105, 30, 0.25) 17.02128%, rgba(210, 105, 30, 0.5) 17.02128%, rgba(210, 105, 30, 0.5) 23.40426%, rgba(210, 105, 30, 0.25) 23.40426%, rgba(210, 105, 30, 0.25) 25.53191%, rgba(210, 105, 30, 0.5) 25.53191%, rgba(210, 105, 30, 0.5) 31.91489%, rgba(210, 105, 30, 0.25) 31.91489%, rgba(210, 105, 30, 0.25) 34.04255%, rgba(210, 105, 30, 0.5) 34.04255%, rgba(210, 105, 30, 0.5) 40.42553%, rgba(210, 105, 30, 0.25) 40.42553%, rgba(210, 105, 30, 0.25) 42.55319%, rgba(210, 105, 30, 0.5) 42.55319%, rgba(210, 105, 30, 0.5) 48.93617%, rgba(210, 105, 30, 0.25) 48.93617%, rgba(210, 105, 30, 0.25) 51.06383%, rgba(210, 105, 30, 0.5) 51.06383%, rgba(210, 105, 30, 0.5) 57.44681%, rgba(210, 105, 30, 0.25) 57.44681%, rgba(210, 105, 30, 0.25) 59.57447%, rgba(210, 105, 30, 0.5) 59.57447%, rgba(210, 105, 30, 0.5) 65.95745%, rgba(210, 105, 30, 0.25) 65.95745%, rgba(210, 105, 30, 0.25) 68.08511%, rgba(210, 105, 30, 0.5) 68.08511%, rgba(210, 105, 30, 0.5) 74.46809%, rgba(210, 105, 30, 0.25) 74.46809%, rgba(210, 105, 30, 0.25) 76.59574%, rgba(210, 105, 30, 0.5) 76.59574%, rgba(210, 105, 30, 0.5) 82.97872%, rgba(210, 105, 30, 0.25) 82.97872%, rgba(210, 105, 30, 0.25) 85.10638%, rgba(210, 105, 30, 0.5) 85.10638%, rgba(210, 105, 30, 0.5) 91.48936%, rgba(210, 105, 30, 0.25) 91.48936%, rgba(210, 105, 30, 0.25) 93.61702%, rgba(210, 105, 30, 0.5) 93.61702%, rgba(210, 105, 30, 0.5) 100%);
-  }
-}
-@media (min-width: 48em) {
-  #container {
-    width: 768px;
+    width: 100%;
   }
 }
 @media (min-width: 60em) {
   #container {
-    width: 960px;
+    width: 100%;
   }
+}
+
+#header {
+  background: #222;
+  height: 100px;
+}
+#header #logo {
+  float: left;
+  padding: 20px 50px;
+  position: relative;
+  display: inline-block;
+  transition: background 0.5s ease;
+  margin: 0 -40px 0 20px;
+}
+#header #logo:hover {
+  background: #888;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.statement {
+  background: #f2f2f2;
+  padding: 100px 10%;
+}
+@media (min-width: 48em) {
+  .statement {
+    padding: 100px 20%;
+  }
+}
+@media (min-width: 60em) {
+  .statement {
+    padding: 100px 30%;
+  }
+}
+.statement p {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-family: "Amasis", Times, serif;
+  line-height: 1.3em;
+  text-align: center;
+}
+@media (min-width: 48em) {
+  .statement p {
+    font-size: 32px;
+    font-size: 3.2rem;
+  }
+}
+@media (min-width: 60em) {
+  .statement p {
+    min-width: 580px;
+    font-size: 40px;
+    font-size: 4rem;
+  }
+}
+
+h2.pane-title {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+@media (min-width: 48em) {
+  h2.pane-title {
+    font-size: 32px;
+    font-size: 3.2rem;
+  }
+}
+@media (min-width: 60em) {
+  h2.pane-title {
+    font-size: 40px;
+    font-size: 4rem;
+  }
+}
+
+.features {
+  padding: 100px 10%;
+  font-size: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+.features .info {
+  line-height: 2.0em;
+}
+.features .numbers {
+  padding: 30px 0px;
+}
+.features .numbers .trips {
+  float: left;
+  width: 30%;
+}
+.features .numbers .trips:nth-child(2) {
+  margin: 0 2%;
+}
+.features .numbers .trips .bedrooms {
+  background: #a7d3db;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 40%;
+  color: white;
+  padding-top: 31px;
+  border-radius: 40px;
+  font-size: 50px;
+  font-family: Proxima Nova;
+}
+.features .numbers .trips .bathrooms {
+  background: #e3e3e3;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 40%;
+  color: white;
+  padding-top: 31px;
+  border-radius: 40px;
+  font-size: 50px;
+  font-family: Proxima Nova;
+}
+.features .numbers .trips .bubble {
+  background: #c9c793;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 40%;
+  color: white;
+  padding-top: 31px;
+  border-radius: 40px;
+  font-size: 50px;
+  font-family: Proxima Nova;
+}
+.features .numbers .trips .bubble .feet {
+  font-size: 20px;
+}
+
+.view-marquee .flexslider {
+  margin: 0;
+  border: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+  border-radius: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.view-marquee .flexslider ul.slides {
+  display: inline-block;
+  top: -18px;
+  position: relative;
+}
+.view-marquee .flex-control-nav {
+  bottom: 100px;
+}
+.view-marquee .flex-direction-nav {
+  display: none;
+}
+.view-marquee .views-slideshow-controls-bottom {
+  position: absolute;
+  top: 800px;
+  left: 5%;
+  z-index: 20;
+}
+.view-marquee .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
+  text-indent: -999px;
+  background: white;
+  height: 20px;
+  width: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  opacity: 0.7;
+  float: left;
+  margin-right: 15px;
+}
+.view-marquee .views-slideshow-controls-bottom .views-slideshow-pager-field-item:hover {
+  cursor: pointer;
+}
+.view-marquee .views-slideshow-controls-bottom .views-slideshow-pager-field-item.active {
+  opacity: 1.0;
+}
+.view-marquee .views-field-title {
+  position: relative;
+  top: -300px;
+  z-index: 10;
+  left: 10%;
+  color: white;
+  font-size: 60px;
+  font-size: 6rem;
+  padding: 50px 20px 60px 20px;
+  text-shadow: rgba(60, 60, 60, 0.9) -3px -2px 20px;
+  font-family: Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+}
+.view-marquee .field-name-field-marquee img {
+  width: 100%;
+}
+
+#header .block-menu {
+  float: left;
+  margin: 0;
+}
+#header .block-menu ul.menu {
+  margin: 0;
+}
+#header .block-menu ul.menu li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  list-style: none;
+  display: inline;
+  float: left;
+}
+#header .block-menu ul.menu li li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+}
+#header .block-menu ul.menu li li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+#header .block-menu ul.menu li a {
+  padding: 36px 85px 8px;
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  display: block;
+  letter-spacing: 1px;
+  font-weight: normal;
+  height: 100px;
+  transition: background 0.3s ease;
+  transition: border-bottom 0.3s ease;
+  border-bottom: 10px solid transparent;
+}
+#header .block-menu ul.menu li a:hover {
+  border-bottom: solid 15px black;
+}
+#header .block-menu ul.menu li a.link-social-media {
+  padding: 19px 25px 15px;
+  transition: background 0.3s ease;
+  transition: border-bottom 0.3s ease;
+}
+#header .block-menu ul.menu li a.link-facebook {
+  background: #3b5998;
+  border-bottom: 10px solid #3b5998;
+}
+#header .block-menu ul.menu li a.link-facebook:hover {
+  background: #4c70ba;
+  border-bottom: solid 15px #2d4373;
+}
+#header .block-menu ul.menu li a.link-twitter {
+  background: #33ccff;
+  border-bottom: 10px solid #33ccff;
+}
+#header .block-menu ul.menu li a.link-twitter:hover {
+  background: #66d9ff;
+  border-bottom: solid 15px deepskyblue;
+}
+
+.page-contact main {
+  padding: 10px 3% 20px;
+  background: #777;
+  -webkit-box-shadow: inset #1b1b1b 0px 0px 200px 0px;
+  -moz-box-shadow: inset #1b1b1b 0px 0px 200px 0px;
+  box-shadow: inset #1b1b1b 0px 0px 200px 0px;
+}
+.page-contact main h1#page-title {
+  text-align: center;
+  color: #f5fa7a;
+  font-weight: normal;
+}
+.page-contact main #block-system-main {
+  padding: 0;
+}
+@media (min-width: 48em) {
+  .page-contact main #block-system-main {
+    padding: 0 20%;
+  }
+}
+.page-contact main #block-system-main #contact-site-form {
+  width: 100%;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+@media (min-width: 48em) {
+  .page-contact main #block-system-main #contact-site-form {
+    width: 100%;
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+}
+.page-contact main #block-system-main #contact-site-form input,
+.page-contact main #block-system-main #contact-site-form textarea {
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #666;
+}
+
+input.form-text {
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+}
+
+input.form-submit {
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+}
+@media (min-width: 48em) {
+  input.form-submit {
+    width: 20%;
+    max-width: 200px;
+  }
+}
+
+textarea {
+  padding: 5px;
 }

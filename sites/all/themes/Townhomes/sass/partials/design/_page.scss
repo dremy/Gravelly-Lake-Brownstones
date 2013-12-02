@@ -1,0 +1,41 @@
+//////////////
+// Page Elements
+//////////////
+
+%page {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+html {
+	font-size: 62.5%;
+	overflow:auto;
+	@extend %page;
+}
+
+body {
+	@include font-size (1.2);
+	font-family: $proxima;
+	overflow: hidden;
+	@extend %page;
+	background: $white;
+}
+
+#container {
+	margin: 0 auto;
+	height: auto;
+	height: 100%;
+	//border: 1px solid #ccc;
+	//@include border-radius (8px);
+	width: 100%;
+	@include breakpoint (768px) {
+		width: 100%;
+	}
+	@include breakpoint (960px) {
+		width:100%;	
+	}
+}

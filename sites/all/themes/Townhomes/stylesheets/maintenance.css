@@ -242,7 +242,7 @@ table {
 * Typography: Headings, body text, lists, code, and more for a versatile and durable typography system.
 */
 body {
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Proxima Nova, Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -295,5 +295,5 @@ input,
 button,
 select,
 textarea {
-  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-family: Proxima Nova, Arial, Helvetica, sans-serif;
 }

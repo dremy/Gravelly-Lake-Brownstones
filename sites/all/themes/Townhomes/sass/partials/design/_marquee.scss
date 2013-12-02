@@ -1,0 +1,60 @@
+//////////////
+// Marquee
+//////////////
+
+.view-marquee {
+	.flexslider {
+		margin: 0;
+		border: none;
+		@include border-radius (none);
+		@include box-shadow (none);
+		ul.slides {
+			display: inline-block;
+			top: -18px;
+			position: relative;
+		}
+	}
+	.flex-control-nav {
+		bottom: 100px;
+	}
+	.flex-direction-nav {
+		display: none;
+	}
+	.views-slideshow-controls-bottom {
+		position:absolute;
+		top: 800px;
+		left: 5%;
+		z-index: 20;
+		.views-slideshow-pager-field-item {
+			text-indent: -999px;
+			background: $white;
+			height: 20px;
+			width: 20px;
+			@include border-radius (10px);
+			opacity:0.7;
+			float: left;
+			margin-right: 15px;
+			&:hover {
+				cursor: pointer;
+			}
+			&.active {
+				opacity:1.0;
+
+			}
+		}
+	}
+	.views-field-title {
+		position: relative;
+		top: -300px;
+		z-index: 10;
+		left: 10%;
+		color: $white;
+		@include font-size (6.0);
+		padding: 50px 20px 60px 20px;
+		@include text-shadow (rgba(60, 60, 60, 0.90) -3px -2px 20px);
+		font-family: $times;
+	}
+	.field-name-field-marquee img {
+	width: 100%;
+	}
+}

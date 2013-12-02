@@ -1,0 +1,53 @@
+//////////////
+// Contact
+//////////////
+
+.page-contact main {
+	padding: 10px 3% 20px;
+	background: #777;
+	@include box-shadow (inset #1b1b1b 0px 0px 200px 0px);
+
+	h1#page-title {
+		text-align: center;
+		color: #f5fa7a;
+		font-weight:normal;
+	}
+	#block-system-main {
+		padding: 0;
+		@include breakpoint ($tablet) {
+			padding: 0 20%;
+		}
+		#contact-site-form {
+			width: 100%;
+			@include font-size (1.8); 
+			@include breakpoint ($tablet) {
+				width: 100%;
+				@include font-size (1.6); 
+			}
+			input,
+			textarea {
+				width:100%;
+				@include border-radius (5px);
+				border: 1px solid #666;
+			}
+		}	
+	}
+}
+
+input.form-text {
+	width: 100%;
+	padding:5px 5px 5px 5px;
+}
+
+input.form-submit {
+	width: 100%;
+	padding:5px 5px 5px 5px;
+	@include breakpoint ($tablet) {
+		width: 20%;
+		max-width: 200px;
+	}
+}
+
+textarea {
+	padding:5px;
+}
