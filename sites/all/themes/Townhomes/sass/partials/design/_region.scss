@@ -34,24 +34,27 @@
 	}
 	p {
 		@include font-size (2.4);
-		font-family: $amasis;
+		font-family: $amasis-medium;
 		line-height: 1.3em;
+		color: #333;
 		text-align: center;
-		@include breakpoint (768px) {
+		@include breakpoint ($tablet) {
 			@include font-size (3.2);
 		}
-		@include breakpoint (960px) {
+		@include breakpoint ($desktop) {
 			min-width: 580px;
-			@include font-size (4.0);
+			@include font-size (3.4);
 		}
 	}
 }
 h2.pane-title {
 	@include font-size (2.4);
-	@include breakpoint (768px) {
+	font-family: $amasis-bold;
+	color: #333;
+	@include breakpoint ($tablet) {
 		@include font-size (3.2);
 	}
-	@include breakpoint (960px) {
+	@include breakpoint ($desktop) {
 		@include font-size (4.0);
 	}		
 }
@@ -61,53 +64,66 @@ h2.pane-title {
 	@include font-size (2.0);
 	text-align: center;
 	.info {
-		line-height: 2.0em;
+		line-height: 2em;
+		position: relative;
+	}
+	.price {
+		color: #333;
+		position: relative;
+		padding: 30px 0px;
+		line-height: 2.5em;
+		@include font-size (1.6);
+		.starting {
+			font-family: 'Brush Script';
+			font-style: italic;
+			@include font-size (2.4);
+		}
+		.amount {
+			font-family: $amasis-medium;
+			@include font-size (4.5);
+		}
 	}
 	.numbers {
 		padding: 30px 0px;
+		height: auto;
 		.trips {
-			float: left;
-			width: 30%;
-			&:nth-child(2) {
-				margin:0 2%;
+			float: none;
+			width: 100%;
+			clear: both;
+			position: relative;
+			@include breakpoint ($tablet) {
+				float: left;
+				width: 30%;
+				clear: none;
+				&:nth-child(2) {
+					margin:0 2%;
+				}
+			}
+			.unit {
+				text-align: center;
+			} 
+			.dot {
+				width: 140px;
+				height: 140px;
+				display: block;
+				color: #ffffff;
+				margin: 0 auto;
+				position: relative;
+				padding-top: 60px;
+				@include border-radius (70px);
+				@include font-size (5);
+				font-family: $proxima;
 			}
 			.bedrooms {
-				background: #a7d3db;
-				width: 80px;
-				height: 80px;
-				display: block;
-				margin: 0 40%;
-				color: white;
-				padding-top: 31px;
-				border-radius: 40px;
-				font-size: 50px;
-				font-family: Proxima Nova;
+				background: #a7d3db;			
 			}
 			.bathrooms {
 				background: #e3e3e3;
-				width: 80px;
-				height: 80px;
-				display: block;
-				margin: 0 40%;
-				color: white;
-				padding-top: 31px;
-				border-radius: 40px;
-				font-size: 50px;
-				font-family: Proxima Nova;
 			}
 			.bubble {
 				background: #c9c793;
-				width: 80px;
-				height: 80px;
-				display: block;
-				margin: 0 40%;
-				color: white;
-				padding-top: 31px;
-				border-radius: 40px;
-				font-size: 50px;
-				font-family: Proxima Nova;
 				.feet {
-					font-size: 20px;
+					@include font-size (2);
 				}
 			}
 		}

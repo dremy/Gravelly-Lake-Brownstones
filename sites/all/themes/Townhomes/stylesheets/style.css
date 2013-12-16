@@ -306,82 +306,89 @@ textarea {
 /* Global typography for the 2012 TFA responsive theme */
 @font-face {
   font-family: 'Amasis';
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-webfont.eot");
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-webfont.ttf") format("truetype");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-webfont.eot");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-webfont.eot?#iefix") format("embedded-opentype"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-webfont.woff") format("woff"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-webfont.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Amasis Italic';
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-italic-webfont.eot");
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-italic-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-italic-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-italic-webfont.ttf") format("truetype");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-italic-webfont.eot");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-italic-webfont.eot?#iefix") format("embedded-opentype"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-italic-webfont.woff") format("woff"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-italic-webfont.ttf") format("truetype");
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Amasis Bold';
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bold-webfont.eot");
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bold-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bold-webfont.ttf") format("truetype");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bold-webfont.eot");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bold-webfont.woff") format("woff"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bold-webfont.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Amasis Bold Italic';
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bolditalic-webfont.eot");
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bolditalic-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bolditalic-webfont.ttf") format("truetype");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bolditalic-webfont.eot");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bolditalic-webfont.woff") format("woff"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-bolditalic-webfont.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Amasis Black';
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-black-webfont.eot");
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-black-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-black-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-black-webfont.ttf") format("truetype");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-black-webfont.eot");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-black-webfont.eot?#iefix") format("embedded-opentype"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-black-webfont.woff") format("woff"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-black-webfont.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Amasis Black Italic';
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-blackitalic-webfont.eot");
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-blackitalic-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-blackitalic-webfont.ttf") format("truetype");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-blackitalic-webfont.eot");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-blackitalic-webfont.woff") format("woff"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-blackitalic-webfont.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Amasis Light';
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-light-webfont.eot");
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-light-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-light-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-light-webfont.ttf") format("truetype");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-light-webfont.eot");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-light-webfont.eot?#iefix") format("embedded-opentype"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-light-webfont.woff") format("woff"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-light-webfont.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Amasis Light Italic';
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-lightitalic-webfont.eot");
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-lightitalic-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-lightitalic-webfont.ttf") format("truetype");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-lightitalic-webfont.eot");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-lightitalic-webfont.woff") format("woff"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-lightitalic-webfont.ttf") format("truetype");
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Amasis Medium';
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-medium-webfont.eot");
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-medium-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-medium-webfont.ttf") format("truetype");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-medium-webfont.eot");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-medium-webfont.woff") format("woff"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-medium-webfont.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Amasis Medium Italic';
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-mediumitalic-webfont.eot");
-  src: url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-mediumitalic-webfont.woff") format("woff"), url("/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-mediumitalic-webfont.ttf") format("truetype");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-mediumitalic-webfont.eot");
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-mediumitalic-webfont.woff") format("woff"), url("/gbls/sites/all/themes/Townhomes/fonts/amasis/amasismtstd-mediumitalic-webfont.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
+}
+
+@font-face {
+  font-family: 'Brush Script';
+  src: url("/gbls/sites/all/themes/Townhomes/fonts/brushscript/BrushScriptStd.otf");
+  font-weight: 200;
+  font-style: normal;
 }
 
 html, body {
@@ -457,8 +464,9 @@ body {
 .statement p {
   font-size: 24px;
   font-size: 2.4rem;
-  font-family: "Amasis", Times, serif;
+  font-family: "Amasis Medium", Times, serif;
   line-height: 1.3em;
+  color: #333;
   text-align: center;
 }
 @media (min-width: 48em) {
@@ -467,17 +475,19 @@ body {
     font-size: 3.2rem;
   }
 }
-@media (min-width: 60em) {
+@media (min-width: 64em) {
   .statement p {
     min-width: 580px;
-    font-size: 40px;
-    font-size: 4rem;
+    font-size: 34px;
+    font-size: 3.4rem;
   }
 }
 
 h2.pane-title {
   font-size: 24px;
   font-size: 2.4rem;
+  font-family: "Amasis Bold", Times, serif;
+  color: #333;
 }
 @media (min-width: 48em) {
   h2.pane-title {
@@ -485,7 +495,7 @@ h2.pane-title {
     font-size: 3.2rem;
   }
 }
-@media (min-width: 60em) {
+@media (min-width: 64em) {
   h2.pane-title {
     font-size: 40px;
     font-size: 4rem;
@@ -499,56 +509,80 @@ h2.pane-title {
   text-align: center;
 }
 .features .info {
-  line-height: 2.0em;
+  line-height: 2em;
+  position: relative;
+}
+.features .price {
+  color: #333;
+  position: relative;
+  padding: 30px 0px;
+  line-height: 2.5em;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+.features .price .starting {
+  font-family: 'Brush Script';
+  font-style: italic;
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+.features .price .amount {
+  font-family: "Amasis Medium", Times, serif;
+  font-size: 45px;
+  font-size: 4.5rem;
 }
 .features .numbers {
   padding: 30px 0px;
+  height: auto;
 }
 .features .numbers .trips {
-  float: left;
-  width: 30%;
+  float: none;
+  width: 100%;
+  clear: both;
+  position: relative;
 }
-.features .numbers .trips:nth-child(2) {
-  margin: 0 2%;
+@media (min-width: 48em) {
+  .features .numbers .trips {
+    float: left;
+    width: 30%;
+    clear: none;
+  }
+  .features .numbers .trips:nth-child(2) {
+    margin: 0 2%;
+  }
+}
+.features .numbers .trips .unit {
+  text-align: center;
+}
+.features .numbers .trips .dot {
+  width: 140px;
+  height: 140px;
+  display: block;
+  color: #ffffff;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 60px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
+  border-radius: 70px;
+  font-size: 50px;
+  font-size: 5rem;
+  font-family: Proxima Nova, Arial, Helvetica, sans-serif;
 }
 .features .numbers .trips .bedrooms {
   background: #a7d3db;
-  width: 80px;
-  height: 80px;
-  display: block;
-  margin: 0 40%;
-  color: white;
-  padding-top: 31px;
-  border-radius: 40px;
-  font-size: 50px;
-  font-family: Proxima Nova;
 }
 .features .numbers .trips .bathrooms {
   background: #e3e3e3;
-  width: 80px;
-  height: 80px;
-  display: block;
-  margin: 0 40%;
-  color: white;
-  padding-top: 31px;
-  border-radius: 40px;
-  font-size: 50px;
-  font-family: Proxima Nova;
 }
 .features .numbers .trips .bubble {
   background: #c9c793;
-  width: 80px;
-  height: 80px;
-  display: block;
-  margin: 0 40%;
-  color: white;
-  padding-top: 31px;
-  border-radius: 40px;
-  font-size: 50px;
-  font-family: Proxima Nova;
 }
 .features .numbers .trips .bubble .feet {
   font-size: 20px;
+  font-size: 2rem;
 }
 
 .view-marquee .flexslider {
