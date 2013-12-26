@@ -1,14 +1,24 @@
 //////////////
 // Marquee
 //////////////
+
+.aurora-section-first .pane-views {
+	padding-top: 20px;
+}
+
 .pane-views-marquee-block {
+	background: #f2f2f2;
+	@include border-top-left-radius (8px);
+	@include border-top-right-radius (8px);
+}
+.pane-views-marquee-right-block {
 	background: $white;
-	@include border-radius (8px);
 }
 
 .view-marquee {
 	padding-bottom: 60px;
 	.flexslider {
+		background: transparent;
 		margin: 0;
 		border: none;
 		@include border-radius (none);
@@ -49,7 +59,6 @@
 			}
 			&.active {
 				opacity:1.0;
-
 			}
 		}
 	}
@@ -62,6 +71,12 @@
 			padding: 10px;
 			border: 1px solid #ddd;
 			width: 100%;
+			background: $white;
+			width: 80%%;
+			margin: 0 auto;
+			@include breakpoint ($tablet) {
+				width: 100%;
+			}
 		}		
 	}	
 	.views-fieldset {
@@ -86,6 +101,30 @@
 		.field-content {
 			@include font-size (1.8);
 			font-family: $proxima;
+			width: 80%%;
+			margin: 0 auto;
+			@include breakpoint ($tablet) {
+				width: 100%;
+			}			
+		}
+	}
+	.call-to-action {
+		padding: 10px 5px;
+		color: $white;
+		@include font-size (1.6);
+		@include border-radius (6px);
+		text-decoration: none;
+		display: block;
+		background: $salmon;
+		transition: background 0.5s ease;
+		text-align: center;
+		width: 80%;
+		margin: 0 auto;
+		@include breakpoint ($tablet) {
+			width: 200px;
+		}
+		&:hover {
+			background: darken($salmon, 10%);
 		}
 	}
 }
@@ -125,6 +164,121 @@
 			img {
 				border: 1px solid #ddd;
 			}
+		}
+	}
+}
+
+.view-marquee-right {
+	padding-bottom: 60px;
+	.flexslider {
+		margin: 0;
+		border: none;
+		@include border-radius (none);
+		@include box-shadow (none);
+		background: transparent;
+		ul.slides {
+			display: inline-block;
+			top: $base * 2;
+			position: relative;
+		}
+	}
+	.flex-control-nav {
+		width: 100%;
+		@include breakpoint ($tablet) {
+			@include grid-span (6, 1);
+		}
+		li {
+			@include breakpoint ($tablet) {
+				position: relative;
+				top: 10px;
+			}
+		}		
+	}
+	.flex-direction-nav {
+		display: none;
+	}
+	.views-slideshow-controls-bottom {
+		.views-slideshow-pager-field-item {
+			text-indent: -999px;
+			background: $white;
+			height: 20px;
+			width: 20px;
+			@include border-radius (10px);
+			opacity:0.7;
+			float: left;
+			margin-right: 15px;
+			&:hover {
+				cursor: pointer;
+			}
+			&.active {
+				opacity:1.0;
+			}
+		}
+	}
+	.views-field-field-marquee { 
+		width: 100%;
+		margin-top: 20px;
+		@include breakpoint ($tablet) {
+			@include grid-span (6, 7);
+			margin-top: 0;
+		}		
+		img {
+			padding: 10px;
+			background: $white;
+			border: 1px solid #ddd;
+			width: 80%%;
+			margin: 0 auto;
+			@include breakpoint ($tablet) {
+				width: 100%;
+			}			
+		}		
+	}	
+	.views-fieldset {
+		width: 100%;
+		text-align: center;
+		@include breakpoint ($tablet) {
+			@include grid-span (6, 1);
+			text-align: left;
+		}		
+	}
+	.views-field-title {
+		width: 100%;
+		.field-content {
+			@include font-size (5.0);
+			color: $black;
+			font-family: $amasis-bold;
+			line-height: 1em;
+		}
+	}
+	.views-field-body {
+		width: 100%;
+		.field-content {
+			@include font-size (1.8);
+			font-family: $proxima;
+			width: 80%%;
+			margin: 0 auto;
+			@include breakpoint ($tablet) {
+				width: 100%;
+			}
+		}
+	}
+	.call-to-action {
+		padding: 10px 5px;
+		color: $white;
+		@include font-size (1.6);
+		@include border-radius (6px);
+		text-decoration: none;
+		display: block;
+		background: $sky;
+		transition: background 0.5s ease;
+		text-align: center;
+		width: 80%;
+		margin: 0 auto;
+		@include breakpoint ($tablet) {
+			width: 200px;
+		}
+		&:hover {
+			background: darken($sky, 10%);
 		}
 	}
 }

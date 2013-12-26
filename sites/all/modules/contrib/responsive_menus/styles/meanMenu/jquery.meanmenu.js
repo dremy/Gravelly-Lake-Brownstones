@@ -1,5 +1,5 @@
 /**
- * jQuery meanMenu v2.0
+ * jQuery meanMenu v2.0.2
  * Copyright (C) 2012-2013 Chris Wharton (themes@meanthemes.com)
  *
  * This program is free software: you can redistribute it and/or modify
@@ -26,6 +26,7 @@
     $.fn.meanmenu = function (options) {
         var defaults = {
             meanMenuTarget: jQuery(this), // Target the current HTML markup you wish to replace
+            meanMenuContainer: 'body', // Choose where meanmenu will be placed within the HTML
             meanMenuClose: "X", // single character you want to represent the close menu button
             meanMenuCloseSize: "18px", // set font size of close button
             meanMenuOpen: "<span /><span /><span />", // text/markup you want when menu is closed
@@ -47,8 +48,12 @@
         currentWidth = window.innerWidth || document.documentElement.clientWidth;
 
         return this.each(function () {
+            // For Drupal, track the original menu, but make a clone and remove
+            // ul.contextual links for removal of the responsive version.
             var meanMenu = options.meanMenuTarget;
-            var meanReveal = options.meanReveal;
+            var meanMenuClone = options.meanMenuTarget.clone();
+            meanMenuClone.find('.contextual-links-wrapper').remove().find('ul.contextual-links').remove();
+            var meanContainer = options.meanMenuContainer;
             var meanMenuClose = options.meanMenuClose;
             var meanMenuCloseSize = options.meanMenuCloseSize;
             var meanMenuOpen = options.meanMenuOpen;
@@ -118,7 +123,7 @@
             //re-instate original nav (and call this on window.width functions)
             function meanOriginal() {
             	jQuery('.mean-bar,.mean-push').remove();
-            	jQuery('body').removeClass("mean-container");
+            	jQuery(meanContainer).removeClass("mean-container");
             	jQuery(meanMenu).show();
             	menuOn = false;
             	meanMenuExist = false;
@@ -129,11 +134,11 @@
                 if (currentWidth <= meanScreenWidth) {
                 	meanMenuExist = true;
                 	// add class to body so we don't need to worry about media queries here, all CSS is wrapped in '.mean-container'
-                	jQuery('body').addClass("mean-container");
+                	jQuery(meanContainer).addClass("mean-container");
                 	jQuery('.mean-container').prepend('<div class="mean-bar"><a href="#nav" class="meanmenu-reveal" style="'+meanStyles+'">Show Navigation</a><nav class="mean-nav"></nav></div>');
 
                     //push meanMenu navigation into .mean-nav
-                    var meanMenuContents = jQuery(meanMenu).html();
+                    var meanMenuContents = jQuery(meanMenuClone).html();
                     jQuery('.mean-nav').html(meanMenuContents);
 
             		// remove all classes from EVERYTHING inside meanmenu nav
@@ -172,13 +177,10 @@
 		                       		e.preventDefault();
 		                       	   if (jQuery(this).hasClass("mean-clicked")) {
 		                       	   		jQuery(this).text(meanExpand);
-		                               jQuery(this).prev('ul').slideUp(300, function(){
-
-		                               });
+		                               jQuery(this).prev('ul').slideUp(300, function(){});
 		                           } else {
 		                           		jQuery(this).text(meanContract);
-		                           		jQuery(this).prev('ul').slideDown(300, function(){
-		                           		});
+		                           		jQuery(this).prev('ul').slideDown(300, function(){});
 		                           }
 		                           jQuery(this).toggleClass("mean-clicked");
 		                       });

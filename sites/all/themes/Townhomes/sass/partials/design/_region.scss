@@ -10,7 +10,7 @@
 		float: left;
 		transition: opacity 0.5s ease;
 		&:hover {
-			opacity:0.7;
+			opacity: 0.7;
 		}
 	}
 }
@@ -137,4 +137,8 @@ h2.pane-title {
 		padding: 20px;
 		text-align: center;
 	}
+}
+
+.not-front main {
+	padding: 20px 20px 0px;
 }
