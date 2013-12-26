@@ -1,8 +1,13 @@
 //////////////
 // Marquee
 //////////////
+.pane-views-marquee-block {
+	background: $white;
+	@include border-radius (8px);
+}
 
 .view-marquee {
+	padding-bottom: 60px;
 	.flexslider {
 		margin: 0;
 		border: none;
@@ -10,21 +15,26 @@
 		@include box-shadow (none);
 		ul.slides {
 			display: inline-block;
-			top: -18px;
+			top: $base * 2;
 			position: relative;
 		}
 	}
 	.flex-control-nav {
-		bottom: 100px;
+		width: 100%;
+		@include breakpoint ($tablet) {
+			@include grid-span (6, 1);
+		}
+		li {
+			@include breakpoint ($tablet) {
+				position: relative;
+				top: 10px;
+			}
+		}		
 	}
 	.flex-direction-nav {
 		display: none;
 	}
 	.views-slideshow-controls-bottom {
-		position:absolute;
-		top: 800px;
-		left: 5%;
-		z-index: 20;
 		.views-slideshow-pager-field-item {
 			text-indent: -999px;
 			background: $white;
@@ -43,18 +53,78 @@
 			}
 		}
 	}
-	.views-field-title {
-		position: relative;
-		top: -300px;
-		z-index: 10;
-		left: 10%;
-		color: $white;
-		@include font-size (6.0);
-		padding: 50px 20px 60px 20px;
-		@include text-shadow (rgba(60, 60, 60, 0.90) -3px -2px 20px);
-		font-family: $times;
+	.views-field-field-marquee { 
+		width: 100%;
+		@include breakpoint ($tablet) {
+			@include grid-span (6, 1);
+		}		
+		img {
+			padding: 10px;
+			border: 1px solid #ddd;
+			width: 100%;
+		}		
+	}	
+	.views-fieldset {
+		width: 100%;
+		text-align: center;
+		@include breakpoint ($tablet) {
+			@include grid-span (6, 7);
+			text-align: left;
+		}		
 	}
-	.field-name-field-marquee img {
-	width: 100%;
+	.views-field-title {
+		width: 100%;
+		.field-content {
+			@include font-size (5.0);
+			color: $black;
+			font-family: $amasis-bold;
+			line-height: 1em;
+		}
+	}
+	.views-field-body {
+		width: 100%;
+		.field-content {
+			@include font-size (1.8);
+			font-family: $proxima;
+		}
+	}
+}
+
+.pane-views-floor-plans-block {
+	min-height: 360px;
+	background: #f2f2f2;
+	h2.pane-title {
+		padding-top: 20px;
+	}
+}
+
+.view-floor-plans {
+	.views-row {
+		float: left;
+		padding: 0 4%;
+		@include breakpoint ($tablet) {
+			width: 33.3%;
+			padding: 0 1.5%;
+		}
+		.views-field-title {
+			text-align: center;
+			font-family: $proxima;
+			@include font-size (2.4);
+			color: #999;
+			padding: 10px 0;
+		}
+		.views-field-field-image {
+			text-align: center;
+			padding: 10px 10px 0;
+			border: 1px solid #ddd;
+			&:hover {
+			cursor: pointer;
+				@include box-shadow ($sky 0px 0px 10px 0px);
+			}
+			background: $white;			
+			img {
+				border: 1px solid #ddd;
+			}
+		}
 	}
 }

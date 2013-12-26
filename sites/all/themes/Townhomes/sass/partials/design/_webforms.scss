@@ -1,0 +1,42 @@
+//////////////
+// Webform
+//////////////
+
+.pane-webform {
+	h2 {
+		text-align: center;
+	}
+}
+
+#webform-ajax-wrapper-3 {
+	width: 80%;
+	@include breakpoint ($tablet) {
+		width: 50%;		
+	}
+	margin: 0 auto;
+	border: 1px solid #ddd;
+	padding: 20px; 
+	@include border-radius (6px);
+
+	input.form-text {
+		border: 1px solid #ddd;
+		@include border-radius (6px);
+		padding: 10px 5px;
+	}
+	label {
+		@include font-size (1.6);
+		color: #999;
+		font-weight: normal;
+	}
+	input.form-submit {
+		background: $salmon;
+		color: $white;
+		border: none;
+		@include border-radius (6px);
+		@include font-size (1.8);
+		width: 200px;
+		margin: 0 auto;
+		padding: 10px 5px;
+		margin-top: $base;
+	}
+}

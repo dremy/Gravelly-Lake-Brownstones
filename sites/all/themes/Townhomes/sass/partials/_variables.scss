@@ -63,6 +63,11 @@ $font-body:        $proxima;
 $font-monospace:   $courier;
 $form-font-family: $proxima;
 
+//
+// Sizes, etc.
+// 
+
+$base 				  : 10px;
 
 //
 // Colors, etc.
@@ -70,6 +75,10 @@ $form-font-family: $proxima;
 
 $white          : #FFFFFF;
 $black          : #000000;
+$salmon			: #e96e57;
+$sky			: #a7d3db;
+$silver			: #e3e3e3;
+$gold			: #c9c793;
 
 // Standard colors: for standard 4K and other brand colors.
 // Note: these are just for reference, and some brands have multiple colors.

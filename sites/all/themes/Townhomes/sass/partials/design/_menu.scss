@@ -29,12 +29,13 @@
 					border-bottom: solid 15px $black;
 				}
 				&.link-social-media {
+					background: transparent;
 					padding: 19px 25px 15px;
 					transition: background 0.3s ease;
 					transition: border-bottom 0.3s ease;
 				}				
 				&.link-facebook {
-					background: $color-facebook;
+					color: $color-facebook;
 					border-bottom: 10px solid $color-facebook;
 					&:hover {
 						background: lighten( $color-facebook, 10%);
@@ -42,7 +43,7 @@
 					}
 				}
 				&.link-twitter {
-					background: $color-twitter;
+					color: $color-twitter;
 					border-bottom: 10px solid $color-twitter;
 					&:hover {
 						background: lighten( $color-twitter, 10%);

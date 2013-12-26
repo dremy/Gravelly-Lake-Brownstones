@@ -3,40 +3,39 @@
 //////////////
 
 #header {
-	background: #222;
-	height: 100px;	
+	background: transparent;
+	height: 100px;
 	#logo {
+		padding-top: 5px;	
 		float: left;
-		padding: 20px 50px;
-		position: relative;
-		display: inline-block;
-		transition: background 0.5s ease;
-		margin: 0 -40px 0 20px;
+		transition: opacity 0.5s ease;
 		&:hover {
-			background: #888;
-			background: rgba($black, 0.25);
+			opacity:0.7;
 		}
 	}
 }
 
-#main {
-	//@include background-grid;
+main {
+
+}
+
+.flexslider {
+
 }
 
 .statement {
 	background: #f2f2f2;
-	padding: 100px 10%;
-	@include breakpoint (768px) {
-		padding: 100px 20%;
-	}
-	@include breakpoint (960px) {
-		padding: 100px 30%;
+	.pane-content {
+		padding: 100px 0;
+		width: 70%;
+		margin: 0 auto;
 	}
 	p {
 		@include font-size (2.4);
 		font-family: $amasis-medium;
 		line-height: 1.3em;
 		color: #333;
+		margin: 0;
 		text-align: center;
 		@include breakpoint ($tablet) {
 			@include font-size (3.2);
@@ -115,17 +114,27 @@ h2.pane-title {
 				font-family: $proxima;
 			}
 			.bedrooms {
-				background: #a7d3db;			
+				background: $sky;			
 			}
 			.bathrooms {
-				background: #e3e3e3;
+				background: $silver;
 			}
 			.bubble {
-				background: #c9c793;
+				background: $gold;
 				.feet {
 					@include font-size (2);
 				}
 			}
 		}
+	}
+}
+
+#footer {
+	margin-top: 20px;
+	background: #333;
+	color: $white;
+	#block-block-3 {
+		padding: 20px;
+		text-align: center;
 	}
 }

@@ -22,20 +22,25 @@ body {
 	font-family: $proxima;
 	overflow: hidden;
 	@extend %page;
-	background: $white;
+	background: #f8f8f8;
 }
 
-#container {
-	margin: 0 auto;
+.container {
+	margin: 2% auto;
 	height: auto;
 	height: 100%;
-	//border: 1px solid #ccc;
-	//@include border-radius (8px);
-	width: 100%;
-	@include breakpoint (768px) {
-		width: 100%;
+	width: 96%;
+	@include breakpoint ($tablet) {
+		width: 90%;
+		margin: 0 auto;
 	}
-	@include breakpoint (960px) {
-		width:100%;	
+	@include breakpoint ($desktop) {
+		width: $laptop;
+		margin: 0 auto;	
 	}
+}
+
+#container-bottom {
+	border: 1px solid #ddd;
+	@include border-radius (8px);
 }

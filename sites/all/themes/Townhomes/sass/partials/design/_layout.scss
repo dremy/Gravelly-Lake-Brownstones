@@ -3,8 +3,8 @@
 //////////////
 
 $grids: 6; // Mobile
-$grids: add-grid(12 at 768px); // Tablet & Desktop
+$grids: add-grid(12 at $tablet); // Tablet & Desktop
 
 $gutter: 10px;
-$gutter: add-guttoer(20px at 960px); //  Desktop
+$gutter: add-gutter(20px at $desktop); //  Desktop
 $gutter-styles: 'fixed';

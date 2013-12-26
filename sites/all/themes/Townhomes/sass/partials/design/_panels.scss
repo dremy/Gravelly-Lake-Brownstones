@@ -1,0 +1,13 @@
+//////////////
+// Panels Styling
+//////////////
+
+.panel-pane {
+	@include breakpoint ($tablet) {
+			padding: 0 20px;
+	}
+}
+
+h2.pane-title {
+	text-align: center;
+}

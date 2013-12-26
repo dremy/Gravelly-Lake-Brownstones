@@ -67,13 +67,14 @@
  * @see template_process()
  */
 ?>
-<div id="container">
-	<?php if ($page['header']): ?>
-	  <header id="header" role="banner">
+<?php if ($page['header']): ?>
+ <header id="header" role="banner">
+ 	<div id="container-top" class="container">
 	    <?php print render($page['header']); ?>
-	  </header>
-	<?php endif; ?>
-
+	</div>
+</header>
+<?php endif; ?>
+<div id="container-bottom" class="container">
 	<?php if ($page['main_prefix']): ?>
 		<div id="main_prefix">
 	  		<?php print render($page['main_prefix']); ?>
