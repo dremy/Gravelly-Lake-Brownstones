@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Floor Plans feature.
+ */
+
+include_once 'floor_plans.features.inc';
