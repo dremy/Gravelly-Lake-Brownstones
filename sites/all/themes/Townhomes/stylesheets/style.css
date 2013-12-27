@@ -596,6 +596,32 @@ h2.pane-title {
   padding: 20px;
   text-align: center;
 }
+#footer #block-block-3 .copyright {
+  width: 100%;
+  clear: both;
+}
+@media (min-width: 48em) {
+  #footer #block-block-3 .copyright {
+    width: 31.91489%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+}
+#footer #block-block-3 .contact {
+  width: 100%;
+  clear: both;
+}
+@media (min-width: 48em) {
+  #footer #block-block-3 .contact {
+    width: 65.95745%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
 
 .not-front main {
   padding: 20px 20px 0px;

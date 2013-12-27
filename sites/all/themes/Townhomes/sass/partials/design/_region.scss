@@ -136,6 +136,20 @@ h2.pane-title {
 	#block-block-3 {
 		padding: 20px;
 		text-align: center;
+		.copyright {
+			width: 100%;
+			clear: both;
+			@include breakpoint ($tablet) {
+				@include grid-span (4, 1);
+			}
+		}
+		.contact {
+			width: 100%;
+			clear: both;
+			@include breakpoint ($tablet) {
+				@include grid-span (8, 5);
+			}
+		}
 	}
 }
 
