@@ -443,7 +443,7 @@ body {
 
 #header {
   background: transparent;
-  height: 100px;
+  min-height: 100px;
 }
 #header #logo {
   padding-top: 5px;
@@ -591,6 +591,7 @@ h2.pane-title {
   margin-top: 20px;
   background: #333;
   color: white;
+  min-height: 140px;
 }
 #footer #block-block-3 {
   padding: 20px;
