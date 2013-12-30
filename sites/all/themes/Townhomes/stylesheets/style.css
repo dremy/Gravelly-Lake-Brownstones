@@ -643,7 +643,7 @@ main .contact .info {
 }
 @media (min-width: 48em) {
   main .contact .info {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
   }
 }
