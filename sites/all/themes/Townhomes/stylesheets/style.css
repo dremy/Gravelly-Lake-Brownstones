@@ -637,6 +637,19 @@ main .contact {
   background: #f2f2f2;
   padding: 0;
 }
+main .contact .info {
+  padding: 0 20px;
+  width: 100%;
+}
+@media (min-width: 48em) {
+  main .contact .info {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+main .contact .info .telephone a {
+  text-decoration: none;
+}
 main .contact .map {
   border-top: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
