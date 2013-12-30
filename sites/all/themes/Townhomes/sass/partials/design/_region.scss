@@ -147,9 +147,10 @@ h2.pane-title {
 		.contact {
 			width: 100%;
 			clear: both;
-			text-align: right;
+
 			@include breakpoint ($tablet) {
 				@include grid-span (8, 5);
+				text-align: right;
 			}
 		}
 	}
