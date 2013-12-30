@@ -91,7 +91,7 @@
 		width: 100%;
 		.field-content {
 			@include font-size (5.0);
-			color: $black;
+			color: #333;
 			font-family: $amasis-bold;
 			line-height: 1em;
 		}
