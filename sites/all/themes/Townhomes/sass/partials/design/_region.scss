@@ -164,6 +164,11 @@ main .contact {
 	@include font-size (2);
 	line-height: 2em;
 	background: #f2f2f2;
+	padding: 0;
+	.map {
+		border-top: 1px solid #bbb;
+		border-bottom: 1px solid #bbb;
+	}
 }
 
 /* Flexible iFrame */
