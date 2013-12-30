@@ -2,71 +2,75 @@
 // Menu
 //////////////
 
-#header .block-menu {
-	float: left;
-	margin: 0;
-	ul.menu{
+#header {
+	#block-block-menu-apply {
+		.apply {
+			padding: 10px 5px;
+			color: $white;
+			@include font-size (1.6);
+			@include border-radius (6px);
+			text-decoration: none;
+			display: block;
+			background: $sky;
+			transition: background 0.5s ease;
+			text-align: center;
+			width: 80%;
+			margin: 0 auto;
+			@include breakpoint ($tablet) {
+				width: 200px;
+			}
+			&:hover {
+				background: darken($sky, 10%);
+			}
+		}
+	}
+	#block-system-main-menu {
+		float: left;
 		margin: 0;
-		li {
-			@include inline-block-list;
-			@include no-bullets;
-			@include float (left);
-			a {
-				padding: 36px 85px 8px;
-				text-decoration:none;
-				color: $white;
-				@include font-size (2.2);
-				font-weight: bold;
-				display: block;
-				letter-spacing:1px;
-				font-weight: normal;
-				height: 100px;
-				transition: background 0.3s ease;
-				transition: border-bottom 0.3s ease;
-				border-bottom: 10px solid transparent;
-				&:hover {
-					//background: rgba($black, 0.25);
-					border-bottom: solid 15px $black;
-				}
-				&.link-social-media {
-					background: transparent;
-					padding: 19px 25px 15px;
+		ul.menu{
+			margin: 0;
+			li {
+				@include inline-block-list;
+				@include no-bullets;
+				@include float (left);
+				a {
+					padding: 36px 85px 8px;
+					text-decoration:none;
+					color: $white;
+					@include font-size (2.2);
+					font-weight: bold;
+					display: block;
+					letter-spacing:1px;
+					font-weight: normal;
+					height: 100px;
 					transition: background 0.3s ease;
 					transition: border-bottom 0.3s ease;
-				}				
-				&.link-facebook {
-					color: $color-facebook;
-					border-bottom: 10px solid $color-facebook;
+					border-bottom: 10px solid transparent;
 					&:hover {
-						background: lighten( $color-facebook, 10%);
-						border-bottom: solid 15px darken( $color-facebook, 10%);
+						//background: rgba($black, 0.25);
+						border-bottom: solid 15px $black;
 					}
-				}
-				&.link-twitter {
-					color: $color-twitter;
-					border-bottom: 10px solid $color-twitter;
-					&:hover {
-						background: lighten( $color-twitter, 10%);
-						border-bottom: solid 15px darken( $color-twitter, 10%);					
+					&.link-social-media {
+						background: transparent;
+						padding: 19px 25px 15px;
+						transition: background 0.3s ease;
+						transition: border-bottom 0.3s ease;
+					}				
+					&.link-facebook {
+						color: $color-facebook;
+						border-bottom: 10px solid $color-facebook;
+						&:hover {
+							background: lighten( $color-facebook, 10%);
+							border-bottom: solid 15px darken( $color-facebook, 10%);
+						}
 					}
-				}
-				&.apply {
-					padding: 10px 5px;
-					color: $white;
-					@include font-size (1.6);
-					@include border-radius (6px);
-					text-decoration: none;
-					display: block;
-					background: $sky;
-					transition: background 0.5s ease;
-					text-align: center;
-					width: 80%;
-					margin: 0 auto;
-					@include breakpoint ($tablet) {
-						width: 200px;
-					}
-					&:hover {
-						background: darken($sky, 10%);
+					&.link-twitter {
+						color: $color-twitter;
+						border-bottom: 10px solid $color-twitter;
+						&:hover {
+							background: lighten( $color-twitter, 10%);
+							border-bottom: solid 15px darken( $color-twitter, 10%);					
+						}
 					}
 				}
 			}
