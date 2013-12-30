@@ -50,6 +50,25 @@
 						border-bottom: solid 15px darken( $color-twitter, 10%);					
 					}
 				}
+				&.apply {
+					padding: 10px 5px;
+					color: $white;
+					@include font-size (1.6);
+					@include border-radius (6px);
+					text-decoration: none;
+					display: block;
+					background: $sky;
+					transition: background 0.5s ease;
+					text-align: center;
+					width: 80%;
+					margin: 0 auto;
+					@include breakpoint ($tablet) {
+						width: 200px;
+					}
+					&:hover {
+						background: darken($sky, 10%);
+					}
+				}
 			}
 		}
 	}
