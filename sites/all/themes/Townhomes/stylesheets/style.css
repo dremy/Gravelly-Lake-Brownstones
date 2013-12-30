@@ -613,6 +613,7 @@ h2.pane-title {
 #footer #block-block-3 .contact {
   width: 100%;
   clear: both;
+  text-align: right;
 }
 @media (min-width: 48em) {
   #footer #block-block-3 .contact {
